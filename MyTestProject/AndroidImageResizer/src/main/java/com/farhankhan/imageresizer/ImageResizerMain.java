@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 public class ImageResizerMain {
 
     public static String SEPARATOR = "/";
-    public static final String PROJECT_RES_DIRECTORY = "/Users/ YOUR_PROJECT_PATH /Android-Image-Resizer-Module/MyTestProject/app/src/main/res" + SEPARATOR;
+    public static final String PROJECT_RES_DIRECTORY = "/Users/ YOUR_PROJECT_PATH /MyTestProject/app/src/main/res" + SEPARATOR;
 
     public static String FOLDER_PREFIX = "drawable-";
     public static final String SOURCE_FOLDER = FOLDER_PREFIX + "xxxhdpi" + SEPARATOR;
