@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 public class ImageResizerMain {
 
     public static String SEPARATOR = "/";
-    public static final String PROJECT_RES_DIRECTORY = "/Users/farhankhan/MyStuff/FarhanWS/MyTestProject/app/src/main/res/" + SEPARATOR;
+    public static final String PROJECT_RES_DIRECTORY = "/Users/ YOUR_PROJECT_PATH /Android-Image-Resizer-Module/MyTestProject/app/src/main/res" + SEPARATOR;
 
     public static String FOLDER_PREFIX = "drawable-";
     public static final String SOURCE_FOLDER = FOLDER_PREFIX + "xxxhdpi" + SEPARATOR;
@@ -30,7 +30,7 @@ public class ImageResizerMain {
 
             /**
 
-             xxxhdpi screen dimension :  1280*1920 px (its mdpi scale becomes 320*480 px)
+             xxxhdpi screen dimension :  1280*1920 px (its mdpi scale becomes 320*480 px which is pretty good)
 
              Add directories and scale factor to resize images
 
