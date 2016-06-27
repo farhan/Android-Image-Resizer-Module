@@ -1,7 +1,6 @@
 package com.farhankhan.imageresizer;
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * @author farhankhan
@@ -38,22 +37,18 @@ public class IconResizerMain {
         }
     }
 
-    public static void createIcon(String directory, int width, int height) {
+    public static void createIcon(String directory, int width, int height) throws Exception{
         final String destinationDirectory = PROJECT_RES_DIRECTORY + directory + SEPARATOR;
         //create new directory
         new File(destinationDirectory).mkdirs();
         //resize icon
-        try {
-            Utils.resizeImageTo (
-                SOURCE_ICON_512x512,
-                destinationDirectory,
-                ICON_NAME,
-                width,
-                height
-            );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Utils.resizeImageTo (
+            SOURCE_ICON_512x512,
+            destinationDirectory,
+            ICON_NAME,
+            width,
+            height
+        );
     }
 
 }
