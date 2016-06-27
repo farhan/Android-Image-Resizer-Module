@@ -13,11 +13,10 @@ import javax.imageio.ImageIO;
  */
 public class ImageResizerMain {
 
-    public static String SEPARATOR = "/";
-    public static final String PROJECT_RES_DIRECTORY = "/Users/ YOUR_PROJECT_PATH /MyTestProject/app/src/main/res" + SEPARATOR;
+    public static final String SEPARATOR = "/";
+    public static final String PROJECT_RES_DIRECTORY = "YOUR_PROJECT_PATH/MyTestProject/app/src/main/res" + SEPARATOR;
 
-    public static String FOLDER_PREFIX = "drawable-";
-    public static final String SOURCE_FOLDER = FOLDER_PREFIX + "xxxhdpi" + SEPARATOR;
+    public static final String SOURCE_FOLDER = "drawable-xxxhdpi" + SEPARATOR;
 
     public static void main(String[] args) {
         try {
@@ -48,12 +47,12 @@ public class ImageResizerMain {
 
              */
 
-            resizeAllImagesTo(FOLDER_PREFIX+"ldpi",    0.19f,  imagesList);
-            resizeAllImagesTo(FOLDER_PREFIX+"mdpi",    0.25f,  imagesList);
-            //resizeAllImagesTo(FOLDER_PREFIX+"tvdpi",   0.33f,  imagesList);
-            resizeAllImagesTo(FOLDER_PREFIX+"hdpi",    0.38f,  imagesList);
-            resizeAllImagesTo(FOLDER_PREFIX+"xhdpi",   0.50f,  imagesList);
-            resizeAllImagesTo(FOLDER_PREFIX+"xxhdpi",  0.75f,  imagesList);
+            resizeAllImagesTo("drawable-ldpi",    0.19f,  imagesList);
+            resizeAllImagesTo("drawable-mdpi",    0.25f,  imagesList);
+            //resizeAllImagesTo("drawable-tvdpi",   0.33f,  imagesList);
+            resizeAllImagesTo("drawable-hdpi",    0.38f,  imagesList);
+            resizeAllImagesTo("drawable-xhdpi",   0.50f,  imagesList);
+            resizeAllImagesTo("drawable-xxhdpi",  0.75f,  imagesList);
 
 
             System.out.println("\n ******  Images successfully rescaled into their respective directories :) ******\n\n");
